@@ -1,0 +1,39 @@
+.header {
+  height: 78px;
+
+  .nav {
+    height: 100%;
+  }
+
+  .counter {
+    width: 14px;
+    height: 14px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    outline: 3px solid #ffffff;
+    position: absolute;
+    top: 0;
+    right: -5px;
+  }
+
+  .navItem {
+    height: 100%;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  .navBorder {
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+  }
+}

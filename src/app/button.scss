@@ -1,0 +1,12 @@
+.customButton {
+  display: flex;
+  gap: 9px;
+  padding: 8px 9px;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+
+  &:hover {
+    background-color: var(--dark-primary);
+  }
+}

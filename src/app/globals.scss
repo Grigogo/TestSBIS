@@ -1,0 +1,50 @@
+$theme-colors: (
+  'white': #ffffff,
+  'textBase': #3D3D3D,
+  'textLight': #5A5A5A,
+  'darkColor': #2A2A2A,
+  'lightColor': #FAFAFA,
+  'primary': #96c361,
+  'primaryLight': #c6e3cd,
+  'primaryDark': #7daf42,
+  'darkGrey': #5F646D,
+  'middleGrey': #A5A5A5,
+  'lightGrey': #E5E5E5,
+);
+
+@import '~bootstrap/scss/bootstrap';
+
+@import 'fonts.scss';
+
+:root {
+  --white-color: #ffffff;
+  --text-color: #3D3D3D;
+  --text-light: #5A5A5A;
+  --dark-color: #2A2A2A;
+  --light-primary: #c6e3cd;
+  --primary-color: #96c361;
+  --dark-primary: #7daf42;
+  --dark-grey: #5F646D;
+  --middle-grey: #A5A5A5;
+  --light-grey: #E5E5E5;
+}
+
+html,
+body {
+  font-family: "Stolzl";
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+@import './button.scss'
