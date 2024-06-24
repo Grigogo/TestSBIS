@@ -1,4 +1,4 @@
 export interface IButton {
-  icon: string
+  icon?: string
   text: string
 }

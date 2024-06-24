@@ -1,0 +1,52 @@
+.filter {
+  background-color: var(--light-color);
+  padding: 14px 16px 28px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.5px;
+}
+
+.filterTitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 17px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--primary-color)
+  }
+}
+
+.underListItem {
+  padding: 4px;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--primary-color)
+  }
+}
+
+.accordWrap {
+  transition: max-height 0.8s ease-in-out;
+  overflow: hidden;
+}
+
+.accordionTurn {
+  transition: max-height 0.8s ease-in-out;
+  max-height: 0;
+}
+
+.accordionExpanded {
+  transition: max-height 0.8s ease-in-out;
+  max-height: 200px;
+}

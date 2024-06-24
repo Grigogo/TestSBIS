@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Button: FC<IButton> = ({ icon, text }) => {
   return (
     <button className='customButton'>
-      <Image src={icon} alt={icon} width={20} height={20}/>
+      {icon ? (<Image src={icon} alt={icon} width={20} height={20}/>) : null}
       {text}
     </button>
   )
