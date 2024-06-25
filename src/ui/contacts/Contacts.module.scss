@@ -1,0 +1,13 @@
+.wrapper {
+  background-color: var(--dark-color);
+  height: 88px;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  color: var(--white-color);
+  gap: 9px;
+}

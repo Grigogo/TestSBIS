@@ -16,6 +16,7 @@ $theme-colors: (
 
 @import 'fonts.scss';
 
+
 :root {
   --white-color: #ffffff;
   --text-color: #3D3D3D;
@@ -47,9 +48,18 @@ a {
   text-decoration: none;
 }
 
+address {
+  margin: 0;
+  padding: 0;
+}
+
 button {
   border: none;
   outline: none;
+}
+
+li {
+  list-style: none;
 }
 
 .dot {
@@ -62,6 +72,7 @@ button {
   justify-content: space-between;
 }
 
-@import './button.scss'
+@import './button.scss';
+@import './range_slider.scss';
 
 

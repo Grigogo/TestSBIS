@@ -19,9 +19,10 @@
   justify-content: space-between;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  font-weight: 500;
 
   &:hover {
-    color: var(--primary-color)
+    color: var(--primary-color);
   }
 }
 
@@ -30,23 +31,28 @@
   list-style: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  font-weight: 500;
 
   &:hover {
-    color: var(--primary-color)
+    color: var(--primary-color);
   }
 }
 
-.accordWrap {
-  transition: max-height 0.8s ease-in-out;
+.accordCollapse {
+  height: 0;
+  transition: height 0.3s ease-in-out;
   overflow: hidden;
 }
 
-.accordionTurn {
-  transition: max-height 0.8s ease-in-out;
-  max-height: 0;
+.stub {
+  width: 16px;
+  height: 16px;
 }
 
-.accordionExpanded {
-  transition: max-height 0.8s ease-in-out;
-  max-height: 200px;
+.priceRange {
+  margin-top: 16px;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.5px;
 }
