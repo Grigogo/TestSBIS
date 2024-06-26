@@ -13,7 +13,7 @@ const Footer: FC = () => {
           <div className={styles.list}>
             <h3 className={styles.title}>Мой аккаунт</h3>
             <ul>
-              <li className={styles.listItem} className={styles.listItem}>Мой аккаунт</li>
+              <li className={styles.listItem}>Мой аккаунт</li>
               <li className={styles.listItem}>История заказов</li>
               <li className={styles.listItem}>Наши контакты</li>
               <li className={styles.listItem}>Политика</li>

@@ -10,7 +10,7 @@ const Blog: FC = () => {
       <p className={styles.blogDescr}>Мы являемся интернет-магазином кальянов, предлагающим широкий ассортимент современных и по доступной цене кальянов и их комплектующих.</p>
       <div className={styles.cardsWrapper}>
         {blogData.map((item) => (
-          <BlogItem image={item.image} date={item.date} title={item.title} descr={item.descr} link={item.link} />
+          <BlogItem key={item.title} image={item.image} date={item.date} title={item.title} descr={item.descr} link={item.link} />
         ))}
       </div>
     </div>

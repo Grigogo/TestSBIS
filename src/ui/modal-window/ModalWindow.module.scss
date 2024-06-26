@@ -1,0 +1,60 @@
+.modal {
+  margin-left: -26%;
+  margin-top: 30px;
+}
+
+.body {
+  padding: 24px 12px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.text {
+  margin-bottom: 12px;
+}
+
+.span {
+  text-decoration: underline;
+}
+
+.buttons {
+  display: flex;
+  justify-content: start;
+  gap: 32px;
+}
+
+.button {
+  padding: 4px 24px;
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+.blackButton {
+  font-weight: 500;
+  padding: 4px 24px;
+  color: var(--white-color);
+  background-color: var(--dark-color);
+}
+
+.modalCity {
+  margin: auto;
+}
+
+.bodyCity {
+  padding: 3rem;
+  padding-top: 1rem;
+}
+
+.ulCity {
+  column-count: 3;
+}
+
+.liCity {
+  cursor: pointer;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}

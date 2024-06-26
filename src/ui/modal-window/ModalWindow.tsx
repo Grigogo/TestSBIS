@@ -1,30 +1,33 @@
-import React from 'react'
-import { Button, Modal, ModalProps } from 'react-bootstrap'
+import React, { FC } from 'react'
+import { Button, Modal } from 'react-bootstrap'
+import styles from './ModalWindow.module.scss'
 
-const ModalWindow = (props: ModalProps) => {
+interface ModalWindowProps {
+  onHide: () => void;
+  showModalCity: () => void;
+  show: boolean;
+  centered: boolean;
+  backdrop: boolean;
+  city: string;
+}
+
+const ModalWindow: FC<ModalWindowProps> = ({ onHide, show, centered, backdrop, city, showModalCity }) => {
   return (
     <Modal
-      {...props}
-      size="lg"
+      show={show}
+      centered={centered}
+      backdrop={backdrop}
+      size="sm"
       aria-labelledby="contained-modal-title-vcenter"
-      centered
+      className={styles.modal}
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+      <Modal.Body className={styles.body}>
+        <div className={styles.text}>Ваш город <span className={styles.span}>{city}</span> верно?</div>
+        <div className={styles.buttons}>
+          <Button className={styles.blackButton} onClick={onHide}>Да</Button>
+          <Button className={styles.button} onClick={showModalCity}>Нет</Button>
+        </div>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
     </Modal>
   )
 }

@@ -3,7 +3,7 @@ import RangeSlider from 'react-range-slider-input';
 import styles from './Filter.module.scss';
 
 const FilterPrice: FC = () => {
-  const [priceValue, setPriceValue] = useState([500, 12000])
+  const [priceValue, setPriceValue] = useState<[number, number]>([500, 12000]);
 
   return (
     <div>
