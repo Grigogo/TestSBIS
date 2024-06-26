@@ -32,6 +32,7 @@ const ModalWindow: FC<ModalCityProps> = ({ onHide, show, centered, backdrop, set
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       className={styles.modalCity}
+      onHide={onHide}
     >
       <Modal.Header closeButton>
         <h3>Укажите ваш город</h3>
@@ -39,7 +40,7 @@ const ModalWindow: FC<ModalCityProps> = ({ onHide, show, centered, backdrop, set
       <Modal.Body className={styles.bodyCity}>
         <ul className={styles.ulCity}>
           {cities.map((city) => (
-            <li key={city} onClick={() => handleCityClick(city)}>
+            <li className={styles.liCity} key={city} onClick={() => handleCityClick(city)}>
               {city}
             </li>
           ))}
